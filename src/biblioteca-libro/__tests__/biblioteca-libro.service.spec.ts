@@ -2,7 +2,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { BibliotecaLibroService } from '../biblioteca-libro.service';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { NotFoundException } from '@nestjs/common';
+import { BadRequestException, NotFoundException } from '@nestjs/common';
 import { Biblioteca } from '../../biblioteca/biblioteca/biblioteca';
 import { Libro } from '../../libro/libro/libro';
 
@@ -94,4 +94,15 @@ describe('BibliotecaLibroService', () => {
     const result = await service.deleteBookFromLibrary(1, 1);
     expect(result.libros).toEqual([{ id: 2 }]);
   });
+
+  it('debe lanzar error si el libro ya está asociado', async () => {
+    const libro = { id: 1 };
+    const biblioteca = { id: 1, libros: [libro] };
+    mockBibliotecaRepo.findOne.mockResolvedValue(biblioteca);
+    mockLibroRepo.findOne.mockResolvedValue(libro);
+
+    await expect(service.addBookToLibrary(1, 1)).rejects.toThrow(BadRequestException);
+  });
+
+
 });

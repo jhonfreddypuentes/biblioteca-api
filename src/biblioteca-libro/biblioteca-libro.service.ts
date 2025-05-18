@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Biblioteca } from '../biblioteca/biblioteca/biblioteca';
 import { Libro } from '../libro/libro/libro';
@@ -21,6 +21,11 @@ export class BibliotecaLibroService {
 
     const libro = await this.libroRepo.findOne({ where: { id: libroId } });
     if (!libro) throw new NotFoundException(`Libro ${libroId} no encontrado`);
+
+    const yaAsociado = biblioteca.libros.some(l => l.id === libroId);
+    if (yaAsociado) {
+      throw new BadRequestException(`El libro ya está asociado a la biblioteca`);
+    }
 
     biblioteca.libros.push(libro);
     return this.bibliotecaRepo.save(biblioteca);

@@ -73,6 +73,17 @@
       "**/*.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "src/main.ts",
+      "src/app.module.ts",
+      "src/app.controller.ts",
+      "src/app.service.ts",
+      "src/biblioteca/biblioteca.module.ts",
+      "src/libro/libro.module.ts",
+      "src/biblioteca-libro/biblioteca-libro.module.ts"
+    ]
   }
 }
