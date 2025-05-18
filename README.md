@@ -21,17 +21,17 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Descripción
 
 Solución desarrollo de APIs para el parcial de la materia de Diseño y Construcción de APIs.
 
-## Project setup
+## Instalar dependencias
 
 ```bash
 $ npm install
 ```
 
-## Compile and run the project
+## Compilar y ejecutar la App
 
 ```bash
 # development
@@ -44,7 +44,7 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Run tests
+## Ejecutar Pruebas
 
 ```bash
 # unit tests
@@ -58,6 +58,21 @@ $ npm run test:cov
 ```
 
 ## Evidéncias
+
+### Datos en BD
+
+#### Bibliotecas
+
+![image](https://github.com/user-attachments/assets/2df4d8f4-7943-4ad6-82e7-746eaed8f941)
+
+#### Libros
+
+![image](https://github.com/user-attachments/assets/565fb2ab-2c35-4aa7-9305-096630ca155f)
+
+#### Asociación
+
+![image](https://github.com/user-attachments/assets/a2eee861-6528-4b3a-867d-4466c60fbc01)
+
 
 ### Colección de pruebas Postman
 
