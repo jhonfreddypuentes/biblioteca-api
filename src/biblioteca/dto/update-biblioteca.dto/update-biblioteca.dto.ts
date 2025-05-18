@@ -14,10 +14,14 @@ export class UpdateBibliotecaDto {
   ciudad?: string;
 
   @IsOptional()
-  @IsString()
+  @Matches(/^([0-1]\d|2[0-3]):([0-5]\d)$/, {
+    message: 'horaApertura debe tener el formato HH:mm',
+  })
   horaApertura?: string;
 
   @IsOptional()
-  @IsString()
+  @Matches(/^([0-1]\d|2[0-3]):([0-5]\d)$/, {
+    message: 'horaCierre debe tener el formato HH:mm',
+  })
   horaCierre?: string;
 }

@@ -7,7 +7,7 @@ export class CreateLibroDto {
   @IsString()
   autor: string;
 
-  @IsString()
+  @IsDateString()
   fechaPublicacion: string;
 
   @IsString()

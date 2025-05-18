@@ -10,7 +10,7 @@ export class UpdateLibroDto {
   autor?: string;
 
   @IsOptional()
-  @IsString()
+  @IsDateString({}, { message: 'fechaPublicacion debe ser una fecha válida en formato ISO (YYYY-MM-DD)' })
   fechaPublicacion?: string;
 
   @IsOptional()
