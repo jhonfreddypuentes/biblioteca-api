@@ -23,7 +23,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Solución desarrollo de APIs para el parcial de la materia de Diseño y Construcción de APIs.
 
 ## Project setup
 
@@ -57,41 +57,33 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Deployment
+## Evidéncias
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+### Colección de pruebas Postman
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+![image](https://github.com/user-attachments/assets/b13c2c14-4dfa-45f0-98a6-6ddb2ec8ab67)
 
-```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
-```
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+### Pruebas:
 
-## Resources
+![image](https://github.com/user-attachments/assets/92fa8649-5735-4d91-a924-902b0ada6505)
 
-Check out a few resources that may come in handy when working with NestJS:
+### Coverage
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+![image](https://github.com/user-attachments/assets/249afaeb-052c-41db-aa43-540c99f3d687)
+
+### End to End
+
+![image](https://github.com/user-attachments/assets/2dd0f25f-c2dc-4898-9827-1446581680b8)
+
 
 ## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Cualquier duda contacteme al correo: j.puentesn@uniandes.edu.co
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - Jhon Freddy Puentes
 
 ## License
 
